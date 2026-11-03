@@ -15,7 +15,7 @@ function displayCart() {
             <div class="empty-cart">
                 <h2>Your Cart is Empty</h2>
                 <p>Add your favourite books to your cart.</p>
-                <a href="home.html">Browse Books</a>
+                <a href="index.html">Browse Books</a>
             </div>
         `;
 
