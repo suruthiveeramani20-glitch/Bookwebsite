@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BookNest | Science Books</title>
+
+    <link rel="stylesheet" href="science.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <h2>📚 BookNest</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Science Books</h1>
+
+    <p>
+        Discover the mysteries of the universe, science and technology.
+    </p>
+</section>
+
+<section class="books-section">
+
+    <div class="section-heading">
+        <div>
+            <h2>Popular Science Books</h2>
+            <p>Explore amazing ideas and scientific discoveries.</p>
+        </div>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search science books..."
+        >
+    </div>
+
+    <div class="book-container" id="bookContainer">
+
+        <!-- Book 1 -->
+        <div class="book-card">
+            <div class="book-cover cover1">
+                <img src="cosmos.jpeg" alt="Cosmos book">
+            </div>
+
+            <h3>Cosmos</h3>
+            <p>Carl Sagan</p>
+            <span>Space Science</span>
+            <h4>₹399</h4>
+
+            <button class="buy-btn"
+                onclick="buyBook('Cosmos','Carl Sagan',399,'cosmos.jpeg','Space Science')">
+                Buy Now
+            </button>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="book-card">
+            <div class="book-cover cover2">
+                <img src="history.jpeg"
+                     alt="A Brief History of Time book">
+            </div>
+
+            <h3>A Brief History of Time</h3>
+            <p>Stephen Hawking</p>
+            <span>Physics</span>
+            <h4>₹349</h4>
+
+            <button class="buy-btn"
+                onclick="buyBook('A Brief History of Time','Stephen Hawking',349,'history.jpeg','Physics')">
+                Buy Now
+            </button>
+        </div>
+
+        <!-- Book 3 -->
+        <div class="book-card">
+            <div class="book-cover cover3">
+                <img src="selfish.jpeg"
+                     alt="The Selfish Gene book">
+            </div>
+
+            <h3>The Selfish Gene</h3>
+            <p>Richard Dawkins</p>
+            <span>Biology</span>
+            <h4>₹429</h4>
+
+            <button class="buy-btn"
+                onclick="buyBook('The Selfish Gene','Richard Dawkins',429,'selfish.jpeg','Biology')">
+                Buy Now
+            </button>
+        </div>
+
+        <!-- Book 4 -->
+        <div class="book-card">
+            <div class="book-cover cover4">
+                <img src="astrophysics.jpeg"
+                     alt="Astrophysics for People in a Hurry book">
+            </div>
+
+            <h3>Astrophysics for People in a Hurry</h3>
+            <p>Neil deGrasse Tyson</p>
+            <span>Astronomy</span>
+            <h4>₹299</h4>
+
+            <button class="buy-btn"
+                onclick="buyBook('Astrophysics for People in a Hurry','Neil deGrasse Tyson',299,'astrophysics.jpeg','Astronomy')">
+                Buy Now
+            </button>
+        </div>
+
+        <!-- Book 5 -->
+        <div class="book-card">
+            <div class="book-cover cover5">
+                <img src="origin.jpeg"
+                     alt="On the Origin of Species book">
+            </div>
+
+            <h3>On the Origin of Species</h3>
+            <p>Charles Darwin</p>
+            <span>Evolution</span>
+            <h4>₹379</h4>
+
+            <button class="buy-btn"
+                onclick="buyBook('On the Origin of Species','Charles Darwin',379,'origin.jpeg','Evolution')">
+                Buy Now
+            </button>
+        </div>
+
+        <!-- Book 6 -->
+        <div class="book-card">
+            <div class="book-cover cover6">
+                <img src="silent.jpeg"
+                     alt="Silent Spring book">
+            </div>
+
+            <h3>Silent Spring</h3>
+            <p>Rachel Carson</p>
+            <span>Environmental Science</span>
+            <h4>₹319</h4>
+
+            <button class="buy-btn"
+                onclick="buyBook('Silent Spring','Rachel Carson',319,'silent.jpeg','Environmental Science')">
+                Buy Now
+            </button>
+        </div>
+
+    </div>
+
+    <p id="noBooks">No books found.</p>
+
+</section>
+
+<script src="science.js"></script>
+
+</body>
+</html>

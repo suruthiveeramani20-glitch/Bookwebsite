@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNest | Mystery Books</title>
+    <link rel="stylesheet" href="mystery.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h2 class="logo">📚 BookNest</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Discover the Mystery</h1>
+            <p>Uncover secrets, solve puzzles, and explore thrilling stories.</p>
+        </div>
+    </section>
+
+    <section class="books-section">
+
+        <div class="section-heading">
+            <div>
+                <h2>Famous Mystery Books</h2>
+                <p>Explore thrilling mystery stories from famous authors.</p>
+            </div>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search books or authors..."
+            >
+        </div>
+
+        <div class="book-container" id="bookContainer">
+
+            <div class="book-card">
+                <div class="book-cover cover1">
+                    <img src="none.jpeg"
+                         alt="And Then There Were None">
+                </div>
+                <h3>And Then There Were None</h3>
+                <p>Agatha Christie</p>
+                <span class="genre">Mystery Thriller</span>
+                <h4>₹399</h4>
+                <button class="buy-btn"
+                        onclick="buyBook('And Then There Were None','Agatha Christie',399,'none.jpeg','Mystery Thriller')">
+                    Buy Now
+                </button>
+            </div>
+
+            <div class="book-card">
+                <div class="book-cover cover2">
+                    <img src="murder.jpeg"
+                         alt="Murder on the Orient Express">
+                </div>
+                <h3>Murder on the Orient Express</h3>
+                <p>Agatha Christie</p>
+                <span class="genre">Detective Mystery</span>
+                <h4>₹349</h4>
+                <button class="buy-btn"
+                        onclick="buyBook('Murder on the Orient Express','Agatha Christie',349,'murder.jpeg','Detective Mystery')">
+                    Buy Now
+                </button>
+            </div>
+
+            <div class="book-card">
+                <div class="book-cover cover3">
+                    <img src="sherlock.jpeg"
+                         alt="The Adventures of Sherlock Holmes">
+                </div>
+                <h3>The Adventures of Sherlock Holmes</h3>
+                <p>Arthur Conan Doyle</p>
+                <span class="genre">Detective Fiction</span>
+                <h4>₹299</h4>
+                <button class="buy-btn"
+                        onclick="buyBook('The Adventures of Sherlock Holmes','Arthur Conan Doyle',299,'sherlock.jpeg','Detective Fiction')">
+                    Buy Now
+                </button>
+            </div>
+
+            <div class="book-card">
+                <div class="book-cover cover4">
+                    <img src="tatto.jpeg"
+                         alt="The Girl with the Dragon Tattoo">
+                </div>
+                <h3>The Girl with the Dragon Tattoo</h3>
+                <p>Stieg Larsson</p>
+                <span class="genre">Crime Mystery</span>
+                <h4>₹429</h4>
+                <button class="buy-btn"
+                        onclick="buyBook('The Girl with the Dragon Tattoo','Stieg Larsson',429,'tatto.jpeg','Crime Mystery')">
+                    Buy Now
+                </button>
+            </div>
+
+            <div class="book-card">
+                <div class="book-cover cover5">
+                    <img src="code.jpeg"
+                         alt="The Da Vinci Code">
+                </div>
+                <h3>The Da Vinci Code</h3>
+                <p>Dan Brown</p>
+                <span class="genre">Mystery Thriller</span>
+                <h4>₹379</h4>
+                <button class="buy-btn"
+                        onclick="buyBook('The Da Vinci Code','Dan Brown',379,'code.jpeg','Mystery Thriller')">
+                    Buy Now
+                </button>
+            </div>
+
+            <div class="book-card">
+                <div class="book-cover cover6">
+                    <img src="lies.jpeg"
+                         alt="Big Little Lies">
+                </div>
+                <h3>Big Little Lies</h3>
+                <p>Liane Moriarty</p>
+                <span class="genre">Psychological Mystery</span>
+                <h4>₹359</h4>
+                <button class="buy-btn"
+                        onclick="buyBook('Big Little Lies','Liane Moriarty',359,'lies.jpeg','Psychological Mystery')">
+                    Buy Now
+                </button>
+            </div>
+
+        </div>
+
+        <p id="noBooks">No books found.</p>
+
+    </section>
+
+    <script src="mystery.js"></script>
+</body>
+</html>

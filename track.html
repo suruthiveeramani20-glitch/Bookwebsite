@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BookNest | Track Order</title>
+
+    <link rel="stylesheet" href="track.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        <span>📚</span>
+        <h2>BookNest</h2>
+    </div>
+
+    <a href="index.html" class="back-link">← Continue Shopping</a>
+</header>
+
+<main class="tracking-container">
+
+    <div class="tracking-heading">
+        <h1>Track Your Order</h1>
+        <p>Follow your BookNest order journey</p>
+    </div>
+
+    <!-- BOOK DETAILS -->
+
+    <section class="order-card">
+
+        <div class="book-details">
+
+            <img id="trackingImage" src="" alt="Book Cover">
+
+            <div class="book-info">
+                <span class="order-label">YOUR ORDER</span>
+
+                <h2 id="trackingBookName">Book Name</h2>
+
+                <p id="trackingAuthor"></p>
+
+                <p id="trackingOrderId"></p>
+
+                <p id="trackingQuantity"></p>
+
+                <p id="trackingPayment"></p>
+
+                <h3 id="trackingTotal"></h3>
+            </div>
+
+        </div>
+
+        <div class="delivery-info">
+            <p><strong>Delivery Name:</strong> <span id="trackingCustomer"></span></p>
+            <p><strong>Phone:</strong> <span id="trackingPhone"></span></p>
+            <p><strong>Address:</strong> <span id="trackingAddress"></span></p>
+        </div>
+
+    </section>
+
+
+    <!-- TRACKING TIMELINE -->
+
+    <section class="status-card">
+
+        <h2>Order Status</h2>
+
+        <div class="tracking-timeline">
+
+            <div class="tracking-step active">
+                <div class="step-circle">✓</div>
+
+                <div class="step-content">
+                    <h3>Order Placed</h3>
+                    <p>Your order has been confirmed.</p>
+                </div>
+            </div>
+
+            <div class="tracking-step">
+                <div class="step-circle">2</div>
+
+                <div class="step-content">
+                    <h3>Processing</h3>
+                    <p>Your book is being prepared.</p>
+                </div>
+            </div>
+
+            <div class="tracking-step">
+                <div class="step-circle">3</div>
+
+                <div class="step-content">
+                    <h3>Shipped</h3>
+                    <p>Your book has been dispatched.</p>
+                </div>
+            </div>
+
+            <div class="tracking-step">
+                <div class="step-circle">4</div>
+
+                <div class="step-content">
+                    <h3>Out for Delivery</h3>
+                    <p>Your book is on the way.</p>
+                </div>
+            </div>
+
+            <div class="tracking-step">
+                <div class="step-circle">5</div>
+
+                <div class="step-content">
+                    <h3>Delivered</h3>
+                    <p>Your book has been delivered.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="tracking-note" id="trackingNote">
+            Your order is currently confirmed. Further delivery updates
+            will appear here.
+        </p>
+
+    </section>
+
+</main>
+
+<script src="track.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNest | Order</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        <span>📚</span>
+        <h2>BookNest</h2>
+    </div>
+
+    <a href="fiction.html" class="back-link">← Back to Books</a>
+</header>
+
+<main class="order-layout">
+
+    <!-- LEFT SIDE: BOOK DETAILS -->
+
+    <section class="left-panel">
+
+        <div class="book-image">
+            <img id="bookImage" src="" alt="Book Cover">
+        </div>
+
+        <span class="book-category" id="bookCategory"></span>
+
+        <h1 id="bookTitle"></h1>
+        <p class="author" id="bookAuthor"></p>
+
+        <p class="description">
+            Enjoy your next favourite book from BookNest.
+        </p>
+
+        <h2 class="book-price">₹<span id="bookPrice">0</span></h2>
+
+        <div class="quantity-row">
+            <label>Quantity</label>
+
+            <div class="quantity-control">
+                <button type="button" id="minusBtn">−</button>
+                <input type="number" id="quantity" value="1" readonly>
+                <button type="button" id="plusBtn">+</button>
+            </div>
+        </div>
+
+        <div class="price-row">
+            <span>Delivery</span>
+            <span class="free">FREE</span>
+        </div>
+
+        <div class="price-row total-row">
+            <span>Total Amount</span>
+            <span>₹<span id="totalPrice">0</span></span>
+        </div>
+
+    </section>
+
+
+    <!-- RIGHT SIDE: ORDER FORM -->
+
+    <section class="right-panel">
+
+        <h2>Complete Your Order</h2>
+        <p class="subtitle">Enter your delivery details</p>
+
+        <form id="orderForm">
+
+            <div class="form-row">
+                <label for="customerName">Full Name</label>
+                <input type="text" id="customerName"
+                       placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-row">
+                <label for="customerPhone">Phone Number</label>
+                <input type="tel" id="customerPhone"
+                       placeholder="10-digit phone number"
+                       pattern="[0-9]{10}" maxlength="10" required>
+            </div>
+
+            <div class="form-row">
+                <label for="customerAddress">Delivery Address</label>
+                <textarea id="customerAddress"
+                          placeholder="Enter delivery address"
+                          required></textarea>
+            </div>
+
+            <h3 class="payment-heading">Payment Method</h3>
+
+            <div class="payment-options">
+
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="UPI" checked>
+                    <span>UPI</span>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="Card">
+                    <span>Debit / Credit Card</span>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="COD">
+                    <span>Cash on Delivery</span>
+                </label>
+
+            </div>
+
+
+
+            
+
+            <button type="submit" id="payButton">Pay ₹0</button>
+
+            <div id="orderSuccess" hidden>
+                <p class="success-message">Order Confirmed!</p>
+
+                <button type="button" id="trackButton">
+                    Track an Order
+                </button>
+            </div>
+
+        </form>
+
+    </section>
+
+</main>
+
+<script src="order.js"></script>
+<script src="corder.js"></script>
+</body>
+</html>

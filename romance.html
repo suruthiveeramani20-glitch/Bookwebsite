@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BookNest | Romance Books</title>
+
+    <link rel="stylesheet" href="romance.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <h2>📚 BookNest</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Romance Books</h1>
+
+    <p>
+        Discover beautiful love stories, unforgettable moments
+        and heartwarming relationships.
+    </p>
+</section>
+
+<section class="books-section">
+
+    <div class="section-heading">
+        <div>
+            <h2>Popular Romance Books</h2>
+            <p>Find your next favourite love story.</p>
+        </div>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search romance books..."
+        >
+    </div>
+
+    <div class="book-container" id="bookContainer">
+
+        <!-- Book 1 -->
+        <div class="book-card">
+            <div class="book-cover cover1">
+                <img src="prejudice.jpeg"
+                     alt="Pride and Prejudice">
+            </div>
+
+            <h3>Pride and Prejudice</h3>
+            <p>Jane Austen</p>
+            <span>Classic Romance</span>
+            <h4>₹299</h4>
+
+            <button class="buy-btn"
+                onclick="buyBook('Pride and Prejudice','Jane Austen',299,'prejudice.jpeg','Classic Romance')">
+                Buy Now
+            </button>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="book-card">
+            <div class="book-cover cover2">
+                <img src="notebook.jpeg"
+                     alt="The Notebook">
+            </div>
+
+            <h3>The Notebook</h3>
+            <p>Nicholas Sparks</p>
+            <span>Romantic Fiction</span>
+            <h4>₹349</h4>
+
+            <button class="buy-btn"
+                onclick="buyBook('The Notebook','Nicholas Sparks',349,'notebook.jpeg','Romantic Fiction')">
+                Buy Now
+            </button>
+        </div>
+
+        <!-- Book 3 -->
+        <div class="book-card">
+            <div class="book-cover cover3">
+                <img src="before.jpeg"
+                     alt="Me Before You">
+            </div>
+
+            <h3>Me Before You</h3>
+            <p>Jojo Moyes</p>
+            <span>Romantic Drama</span>
+            <h4>₹399</h4>
+
+            <button class="buy-btn"
+                onclick="buyBook('Me Before You','Jojo Moyes',399,'before.jpeg','Romantic Drama')">
+                Buy Now
+            </button>
+        </div>
+
+        <!-- Book 4 -->
+        <div class="book-card">
+            <div class="book-cover cover4">
+                <img src="fault.jpeg"
+                     alt="The Fault in Our Stars">
+            </div>
+
+            <h3>The Fault in Our Stars</h3>
+            <p>John Green</p>
+            <span>Young Adult Romance</span>
+            <h4>₹329</h4>
+
+            <button class="buy-btn"
+                onclick="buyBook('The Fault in Our Stars','John Green',329,'fault.jpeg','Young Adult Romance')">
+                Buy Now
+            </button>
+        </div>
+
+        <!-- Book 5 -->
+        <div class="book-card">
+            <div class="book-cover cover5">
+                <img src="end.jpeg"
+                     alt="It Ends with Us">
+            </div>
+
+            <h3>It Ends with Us</h3>
+            <p>Colleen Hoover</p>
+            <span>Contemporary Romance</span>
+            <h4>₹379</h4>
+
+            <button class="buy-btn"
+                onclick="buyBook('It Ends with Us','Colleen Hoover',379,'end.jpeg','Contemporary Romance')">
+                Buy Now
+            </button>
+        </div>
+
+        <!-- Book 6 -->
+        <div class="book-card">
+            <div class="book-cover cover6">
+                <img src="love.jpeg"
+                     alt="The Love Hypothesis">
+            </div>
+
+            <h3>The Love Hypothesis</h3>
+            <p>Ali Hazelwood</p>
+            <span>Romantic Comedy</span>
+            <h4>₹359</h4>
+
+            <button class="buy-btn"
+                onclick="buyBook('The Love Hypothesis','Ali Hazelwood',359,'love.jpeg','Romantic Comedy')">
+                Buy Now
+            </button>
+        </div>
+
+    </div>
+
+    <p id="noBooks">No books found.</p>
+
+</section>
+
+<script src="romance.js"></script>
+
+</body>
+</html>

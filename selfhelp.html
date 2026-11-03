@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNest | Self-Help Books</title>
+    <link rel="stylesheet" href="selfhelp.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h2>📚 BookNest</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Self-Help Books</h1>
+    <p>Learn, grow and become the best version of yourself.</p>
+</section>
+
+<section class="book-section">
+
+    <div class="heading">
+        <div>
+            <h2>Popular Self-Help Books</h2>
+            <p>Discover books that inspire personal growth.</p>
+        </div>
+
+        <input type="text" id="searchInput"
+               placeholder="Search self-help books...">
+    </div>
+
+    <div class="book-container">
+
+        <div class="book-card">
+            <div class="book-image">
+                <img src="atomic3.jpeg" alt="Atomic Habits">
+            </div>
+            <h3>Atomic Habits</h3>
+            <p>James Clear</p>
+            <span>Healthy Habits</span>
+            <h4>₹499</h4>
+            <button class="cart-btn"  onclick="buyBook('Atomic Habits','James Clear',499,'atomic1.jpg','Healthy Habits')">Buy Now</button>
+        </div>
+
+        <div class="book-card">
+            <div class="book-image">
+                <img src="power1.jpeg" alt="The Power of Now">
+            </div>
+            <h3>The Power of Now</h3>
+            <p>Eckhart Tolle</p>
+            <span>Mindfulness</span>
+            <h4>₹350</h4>
+            <button class="cart-btn"  onclick="buyBook('The Power of Now','Eckhart Tolle',350,'power.jpeg','Mindfulness')">Buy Now</button>
+        </div>
+
+        <div class="book-card">
+            <div class="book-image">
+                <img src="think2.jpeg" alt="Think and Grow Rich">
+            </div>
+            <h3>Think and Grow Rich</h3>
+            <p>Napoleon Hill</p>
+            <span>Personal Growth</span>
+            <h4>₹299</h4>
+            <button class="cart-btn"  onclick="buyBook('Think and Grow Rich','Napoleon Hill',299,'think.jpeg','Personal Growth')">Buy Now</button>
+        </div>
+
+        <div class="book-card">
+            <div class="book-image">
+                <img src="habit.jpeg" alt="The 7 Habits">
+            </div>
+            <h3>The 7 Habits</h3>
+            <p>Stephen R. Covey</p>
+            <span>Success</span>
+            <h4>₹550</h4>
+            <button class="cart-btn"  onclick="buyBook('The 7 Habits','Stephen R. Covey',550,'habit.jpeg','Success')">Buy Now</button>
+        </div>
+
+        <div class="book-card">
+            <div class="book-image">
+                <img src="win.jpeg"
+                     alt="How to Win Friends and Influence People">
+            </div>
+            <h3>How to Win Friends</h3>
+            <p>Dale Carnegie</p>
+            <span>Communication</span>
+            <h4>₹399</h4>
+            <button class="cart-btn"  onclick="buyBook('How to Win Friends','Dale Carnegie',399,'win.jpeg','Communication')">Buy Now</button>
+        </div>
+
+        <div class="book-card">
+            <div class="book-image">
+                <img src="subtle.jpeg"
+                     alt="The Subtle Art of Not Giving a F*ck">
+            </div>
+            <h3>The Subtle Art</h3>
+            <p>Mark Manson</p>
+            <span>Self Development</span>
+            <h4>₹450</h4>
+            <button class="cart-btn"  onclick="buyBook('The Subtle Art','Mark Manson',450,'subtle.jpeg','Self Development')">Buy Now</button>
+        </div>
+
+    </div>
+
+    <p id="noBooks">No books found.</p>
+
+</section>
+
+<script src="selfhelp.js"></script>
+</body>
+</html>

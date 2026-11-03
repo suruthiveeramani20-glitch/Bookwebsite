@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BookNest | Home</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <span>📚</span>
+        <h2>BookNest</h2>
+    </div>
+
+   
+    <div class="nav-right">
+
+        <div class="search-box">
+            <span>⌕</span>
+            <input type="text" id="searchInput"
+                   placeholder="Search books...">
+        </div>
+
+        <a href="cart.html" class="cart">🛒</a>
+
+        
+
+    </div>
+
+</header>
+
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="subtitle">
+            YOUR NEXT CHAPTER STARTS HERE
+        </p>
+
+        <h1>
+            Find Your Next<br>
+            <span>Favorite Book.</span>
+        </h1>
+
+        <p class="hero-description">
+            Explore stories that inspire, adventures
+            that excite and books that stay with you
+            forever.
+        </p>
+
+        
+
+        <div class="stats">
+
+            <div>
+                <h3>1,200+</h3>
+                <p>Books Available</p>
+            </div>
+
+            <div>
+                <h3>50+</h3>
+                <p>Categories</p>
+            </div>
+
+            <div>
+                <h3>10K+</h3>
+                <p>Happy Readers</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <div class="circle"></div>
+
+        <div class="hero-book book-a">
+            <span>BOOKNEST</span>
+            <h2>The Silent<br>Forest</h2>
+            <p>A Mystery Novel</p>
+        </div>
+
+        <div class="hero-book book-b">
+            <span>BOOKNEST</span>
+            <h2>The Hidden<br>World</h2>
+            <p>Every page is an adventure</p>
+        </div>
+
+        <div class="hero-book book-c">
+            <span>BOOKNEST</span>
+            <h2>Dream<br>Big</h2>
+            <p>New Chapter</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Categories -->
+
+<section class="categories section">
+
+    <div class="section-heading">
+
+        <div>
+            <p class="section-label">EXPLORE YOUR INTERESTS</p>
+            <h2>Browse Categories</h2>
+        </div>
+
+       
+
+    </div>
+
+    <div class="category-grid">
+
+        <a href="fiction.html" class="category-card">
+            <span>📖</span>
+            <h3>Fiction</h3>
+            <p>Explore imaginary worlds</p>
+        </a>
+
+        <a href="selfhelp.html" class="category-card">
+            <span>🧠</span>
+            <h3>Self-Help</h3>
+            <p>Improve yourself</p>
+        </a>
+
+        <a href="science.html" class="category-card">
+            <span>🔬</span>
+            <h3>Science</h3>
+            <p>Discover new ideas</p>
+        </a>
+
+        <a href="romance.html" class="category-card">
+            <span>💖</span>
+            <h3>Romance</h3>
+            <p>Stories of love</p>
+        </a>
+
+        <a href="mystery.html" class="category-card">
+            <span>🕵️</span>
+            <h3>Mystery</h3>
+            <p>Uncover the secrets</p>
+        </a>
+
+        <a href="bio.html" class="category-card">
+            <span>🌍</span>
+            <h3>Biography</h3>
+            <p>Real-life stories</p>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- Popular Books -->
+
+<!-- Popular Books -->
+
+<section class="popular section">
+
+    <div class="section-heading">
+
+        <div>
+            <p class="section-label">HANDPICKED FOR YOU</p>
+            <h2>Popular Books</h2>
+        </div>
+
+        
+
+    </div>
+
+    <div class="book-list">
+
+        <div class="book-card">
+
+            <div class="cover cover-one">
+                <span>BOOKNEST</span>
+                <h3>The Silent<br>Forest</h3>
+                <p>A Mystery Novel</p>
+            </div>
+
+            <div class="book-info">
+                <h3>The Silent Forest</h3>
+                <p>By Emily Carter</p>
+
+                <div class="price">
+                    ₹299 <span>₹399</span>
+                </div>
+
+                <button class="add-cart"  onclick="addToCart(
+    'The Silent Forest',
+    'Emily Carter',
+    299,
+    'cover-blue',
+    'Mystery'
+)">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+        <div class="book-card">
+
+            <div class="cover cover-two">
+                <span>BOOKNEST</span>
+                <h3>Beyond<br>The Stars</h3>
+                <p>Explore the universe</p>
+            </div>
+
+            <div class="book-info">
+                <h3>Beyond The Stars</h3>
+                <p>By James Wilson</p>
+
+                <div class="price">
+                    ₹349 <span>₹449</span>
+                </div>
+
+                <button class="add-cart"  onclick="addToCart(
+    'Beyond The Stars',
+    'James Wilson',
+    349,
+    'cover-sky',
+    'Science Fiction'
+)">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+        <div class="book-card">
+
+            <div class="cover cover-three">
+                <span>BOOKNEST</span>
+                <h3>Little<br>Things</h3>
+                <p>Life & Inspiration</p>
+            </div>
+
+            <div class="book-info">
+                <h3>Little Things</h3>
+                <p>By Sarah Miller</p>
+
+                <div class="price">
+                    ₹249 <span>₹349</span>
+                </div>
+
+                <button class="add-cart"  onclick="addToCart(
+    'Little Things',
+    'Sarah Miller',
+    249,
+    'cover-pink',
+    'Self Help'
+)">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+        <div class="book-card">
+
+            <div class="cover cover-four">
+                <span>BOOKNEST</span>
+                <h3>The Art<br>Of Focus</h3>
+                <p>Build your best self</p>
+            </div>
+
+            <div class="book-info">
+                <h3>The Art Of Focus</h3>
+                <p>By Daniel Brooks</p>
+
+                <div class="price">
+                    ₹399 <span>₹499</span>
+                </div>
+
+                <button class="add-cart"  onclick="addToCart(
+    'The Art Of Focus',
+    'Daniel Brooks',
+    399,
+    'cover-purple',
+    'Self Help'
+)" >
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Best Sellers -->
+
+<section class="bestsellers section">
+
+    <div class="section-heading">
+
+        <div>
+            <p class="section-label">READERS' FAVORITES</p>
+            <h2>Best Sellers</h2>
+        </div>
+
+        
+
+    </div>
+
+    <div class="best-grid">
+
+        <div class="best-card">
+            <div class="best-cover best-one">
+                <h3>Atomic<br>Habits</h3>
+                <p>James Clear</p>
+            </div>
+
+            <div class="best-info">
+                <h3>Atomic Habits</h3>
+                <p>★★★★★</p>
+                <h4>₹450</h4>
+            </div>
+        </div>
+
+        <div class="best-card">
+            <div class="best-cover best-two">
+                <h3>Ikigai</h3>
+                <p>Find Your Purpose</p>
+            </div>
+
+            <div class="best-info">
+                <h3>Ikigai</h3>
+                <p>★★★★★</p>
+                <h4>₹299</h4>
+            </div>
+        </div>
+
+        <div class="best-card">
+            <div class="best-cover best-three">
+                <h3>Rich Dad<br>Poor Dad</h3>
+                <p>Robert Kiyosaki</p>
+            </div>
+
+            <div class="best-info">
+                <h3>Rich Dad Poor Dad</h3>
+                <p>★★★★★</p>
+                <h4>₹399</h4>
+            </div>
+        </div>
+
+        <div class="best-card">
+            <div class="best-cover best-four">
+                <h3>Deep<br>Work</h3>
+                <p>Cal Newport</p>
+            </div>
+
+            <div class="best-info">
+                <h3>Deep Work</h3>
+                <p>★★★★★</p>
+                <h4>₹350</h4>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Offer Banner -->
+
+<section class="offer section">
+
+    <div class="offer-content">
+
+        <p>LIMITED TIME OFFER</p>
+
+        <h2>
+            A little reading,<br>
+            a lot of happiness.
+        </h2>
+
+        <h3>Get 20% OFF on your first order</h3>
+
+        
+    </div>
+
+    <div class="offer-icon">
+        📚
+    </div>
+
+</section>
+
+
+<!-- New Arrivals -->
+
+<section class="new-arrivals section">
+
+    <div class="section-heading">
+
+        <div>
+            <p class="section-label">FRESH OFF THE SHELF</p>
+            <h2>New Arrivals</h2>
+        </div>
+
+        
+
+    </div>
+
+    <div class="new-grid">
+
+        <div class="new-card">
+            <div class="new-cover new-one">
+                <h3>The<br>Creative<br>Mind</h3>
+            </div>
+
+            <div class="new-info">
+                <h3>The Creative Mind</h3>
+                <p>By Olivia Green</p>
+                <h4>₹320</h4>
+            </div>
+        </div>
+
+        <div class="new-card">
+            <div class="new-cover new-two">
+                <h3>Ocean<br>Dreams</h3>
+            </div>
+
+            <div class="new-info">
+                <h3>Ocean Dreams</h3>
+                <p>By Noah Smith</p>
+                <h4>₹280</h4>
+            </div>
+        </div>
+
+        <div class="new-card">
+            <div class="new-cover new-three">
+                <h3>Beyond<br>Tomorrow</h3>
+            </div>
+
+            <div class="new-info">
+                <h3>Beyond Tomorrow</h3>
+                <p>By Ava Martin</p>
+                <h4>₹370</h4>
+            </div>
+        </div>
+
+        <div class="new-card">
+            <div class="new-cover new-four">
+                <h3>Mindful<br>Living</h3>
+            </div>
+
+            <div class="new-info">
+                <h3>Mindful Living</h3>
+                <p>By Ethan Brown</p>
+                <h4>₹299</h4>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Why BookNest -->
+
+<section class="why section">
+
+    <div class="why-heading">
+        <p class="section-label">WHY BOOKNEST</p>
+        <h2>More than just a bookstore</h2>
+        <p>
+            We make finding your next favorite book
+            simple, enjoyable and affordable.
+        </p>
+    </div>
+
+    <div class="why-grid">
+
+        <div class="why-card">
+            <span>🚚</span>
+            <h3>Fast Delivery</h3>
+            <p>
+                Get your favorite books delivered
+                right to your doorstep.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <span>💰</span>
+            <h3>Best Prices</h3>
+            <p>
+                Discover great books at prices
+                that fit your budget.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <span>📚</span>
+            <h3>Huge Collection</h3>
+            <p>
+                Explore books across different
+                genres and categories.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <span>💚</span>
+            <h3>Reader First</h3>
+            <p>
+                Your reading journey is
+                always our priority.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Customer Reviews -->
+
+<section class="reviews section">
+
+    <div class="section-heading">
+
+        <div>
+            <p class="section-label">HAPPY READERS</p>
+            <h2>What Readers Say</h2>
+        </div>
+
+    </div>
+
+    <div class="review-grid">
+
+        <div class="review-card">
+            <p class="stars">★★★★★</p>
+
+            <p class="review-text">
+                "BookNest has an amazing collection.
+                I found all my favorite books in one place."
+            </p>
+
+            <div class="review-user">
+                <div class="avatar">A</div>
+
+                <div>
+                    <h3>Ananya</h3>
+                    <p>Book Lover</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="review-card">
+            <p class="stars">★★★★★</p>
+
+            <p class="review-text">
+                "The website is easy to use.
+                The prices are affordable and the
+                collection is wonderful."
+            </p>
+
+            <div class="review-user">
+                <div class="avatar">R</div>
+
+                <div>
+                    <h3>Rahul</h3>
+                    <p>Regular Reader</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="review-card">
+            <p class="stars">★★★★★</p>
+
+            <p class="review-text">
+                "I love discovering new books here.
+                BookNest makes reading more exciting."
+            </p>
+
+            <div class="review-user">
+                <div class="avatar">M</div>
+
+                <div>
+                    <h3>Meera</h3>
+                    <p>Student</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Newsletter -->
+
+<section class="newsletter">
+
+    <div>
+        <p class="section-label">STAY IN THE LOOP</p>
+
+        <h2>Stories worth sharing.</h2>
+
+        <p>
+            Get updates about new books,
+            special offers and reading recommendations.
+        </p>
+    </div>
+
+    <form id="newsletterForm">
+
+        <input type="email"
+               id="newsletterEmail"
+               placeholder="Enter your email address"
+               required>
+
+        <button type="submit">
+            Subscribe →
+        </button>
+
+    </form>
+
+</section>
+
+
+
+
+
+<script src="index.js"></script>
+<script src="cart.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNest | Fiction Books</title>
+    <link rel="stylesheet" href="fiction.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h2>📚 BookNest</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Fiction Books</h1>
+    <p>Explore magical worlds, exciting adventures and unforgettable stories.</p>
+</section>
+
+<section class="books-section">
+
+    <div class="section-heading">
+        <div>
+            <h2>Popular Fiction Books</h2>
+            <p>Discover your next favourite story.</p>
+        </div>
+
+        <input type="text" id="searchInput"
+               placeholder="Search fiction books...">
+    </div>
+
+    <div class="book-container" id="bookContainer">
+
+        <div class="book-card">
+            <div class="book-cover cover1">
+                <img src="harry2.jpeg" alt="Harry Potter book">
+            </div>
+            <h3>Harry Potter</h3>
+            <p>J.K. Rowling</p>
+            <span>Fantasy Fiction</span>
+            <h4>₹450</h4>
+            <button class="buy-btn"  onclick="buyBook('Harry Potter','J.K.Rowling',450,'harrypotter.jpeg','Fantasy Fiction')">
+                Buy Now</button>
+        </div>
+
+        <div class="book-card">
+            <div class="book-cover cover2">
+                <img src="alchemist1.jpeg" alt="The Alchemist book">
+            </div>
+            <h3>The Alchemist</h3>
+            <p>Paulo Coelho</p>
+            <span>Adventure Fiction</span>
+            <h4>₹299</h4>
+            <button class="buy-btn"  onclick="buyBook('The Alchemist','Paulo Coelho',299,'alchemist.jpeg','Adventure Fiction')">Buy Now</button>
+        </div>
+
+        <div class="book-card">
+            <div class="book-cover cover3">
+                <img src="hobbit1.jpeg" alt="The Hobbit book">
+            </div>
+            <h3>The Hobbit</h3>
+            <p>J.R.R. Tolkien</p>
+            <span>Fantasy Fiction</span>
+            <h4>₹399</h4>
+            <button class="buy-btn"  onclick="buyBook('The Hobbit','J.R.R.Tolktien',399,'hobbit.jpeg','Fantasy Fiction')">Buy Now</button>
+        </div>
+
+        <div class="book-card">
+            <div class="book-cover cover4">
+                <img src="hunger.jpeg" alt="The Hunger Games book">
+            </div>
+            <h3>The Hunger Games</h3>
+            <p>Suzanne Collins</p>
+            <span>Dystopian Fiction</span>
+            <h4>₹350</h4>
+            <button class="buy-btn"  onclick="buyBook('The Hunger Games','Suzanne Collins',350,'hunger.jpeg','Dystopian Fiction')">Buy Now</button>
+        </div>
+
+        <div class="book-card">
+            <div class="book-cover cover5">
+                <img src="little.jpeg" alt="The Little Prince book">
+            </div>
+            <h3>The Little Prince</h3>
+            <p>Antoine de Saint-Exupéry</p>
+            <span>Fantasy Fiction</span>
+            <h4>₹250</h4>
+            <button class="buy-btn"  onclick="buyBook('The Little Prince','Antoine de Saint-Exupéry',250,'little.jpeg','Fantasy Fiction')">Buy Now</button>
+        </div>
+
+        <div class="book-card">
+            <div class="book-cover cover6">
+                <img src="pride.jpeg" alt="Pride and Prejudice book">
+            </div>
+            <h3>Pride and Prejudice</h3>
+            <p>Jane Austen</p>
+            <span>Classic Fiction</span>
+            <h4>₹299</h4>
+            <button class="buy-btn"  onclick="buyBook('Pride and Prejudice','Jane Austen',299,'pride.jpeg','Classic Fiction')">Buy Now</button>
+        </div>
+
+    </div>
+
+    <p id="noBooks">No books found.</p>
+
+</section>
+
+
+<script src="fiction.js"></script>
+</body>
+</html>

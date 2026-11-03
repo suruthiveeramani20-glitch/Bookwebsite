@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNest | Biography Books</title>
+    <link rel="stylesheet" href="bio.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h2 class="logo">📚 BookNest</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Real Lives. Inspiring Stories.</h1>
+            <p>Explore the journeys, struggles, and achievements of remarkable people.</p>
+        </div>
+    </section>
+
+    <section class="books-section">
+
+        <div class="section-heading">
+            <div>
+                <h2>Famous Biography Books</h2>
+                <p>Read the real-life stories of inspiring personalities.</p>
+            </div>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search books or authors..."
+            >
+        </div>
+
+        <div class="book-container" id="bookContainer">
+
+            <div class="book-card">
+                <div class="book-cover">
+                    <img src="wings.jpeg" alt="Wings of Fire">
+                </div>
+                <h3>Wings of Fire</h3>
+                <p>A. P. J. Abdul Kalam</p>
+                <span class="genre">Autobiography</span>
+                <h4>₹299</h4>
+                <button class="buy-btn"
+                    onclick="buyBook('Wings of Fire','A. P. J. Abdul Kalam',299,'wings.jpeg','Autobiography')">
+                    Buy Now
+                </button>
+            </div>
+
+            <div class="book-card">
+                <div class="book-cover">
+                    <img src="long.jpeg"
+                         alt="Long Walk to Freedom">
+                </div>
+                <h3>Long Walk to Freedom</h3>
+                <p>Nelson Mandela</p>
+                <span class="genre">Autobiography</span>
+                <h4>₹449</h4>
+                <button class="buy-btn"
+                    onclick="buyBook('Long Walk to Freedom','Nelson Mandela',449,'long.jpeg','Autobiography')">
+                    Buy Now
+                </button>
+            </div>
+
+            <div class="book-card">
+                <div class="book-cover">
+                    <img src="jobs.jpeg" alt="Steve Jobs">
+                </div>
+                <h3>Steve Jobs</h3>
+                <p>Walter Isaacson</p>
+                <span class="genre">Biography</span>
+                <h4>₹499</h4>
+                <button class="buy-btn"
+                    onclick="buyBook('Steve Jobs','Walter Isaacson',499,'jobs.jpeg','Biography')">
+                    Buy Now
+                </button>
+            </div>
+
+            <div class="book-card">
+                <div class="book-cover">
+                    <img src="diary.jpeg"
+                         alt="The Diary of a Young Girl">
+                </div>
+                <h3>The Diary of a Young Girl</h3>
+                <p>Anne Frank</p>
+                <span class="genre">Diary / Biography</span>
+                <h4>₹279</h4>
+                <button class="buy-btn"
+                    onclick="buyBook('The Diary of a Young Girl','Anne Frank',279,'diary.jpeg','Diary / Biography')">
+                    Buy Now
+                </button>
+            </div>
+
+            <div class="book-card">
+                <div class="book-cover">
+                    <img src="becoming.jpeg" alt="Becoming">
+                </div>
+                <h3>Becoming</h3>
+                <p>Michelle Obama</p>
+                <span class="genre">Memoir</span>
+                <h4>₹399</h4>
+                <button class="buy-btn"
+                    onclick="buyBook('Becoming','Michelle Obama',399,'becoming.jpeg','Memoir')">
+                    Buy Now
+                </button>
+            </div>
+
+            <div class="book-card">
+                <div class="book-cover">
+                    <img src="educated.jpeg" alt="Educated">
+                </div>
+                <h3>Educated</h3>
+                <p>Tara Westover</p>
+                <span class="genre">Memoir</span>
+                <h4>₹359</h4>
+                <button class="buy-btn"
+                    onclick="buyBook('Educated','Tara Westover',359,'educated.jpeg','Memoir')">
+                    Buy Now
+                </button>
+            </div>
+
+        </div>
+
+        <p id="noBooks">No books found.</p>
+
+    </section>
+
+    <script src="bio.js"></script>
+</body>
+</html>
